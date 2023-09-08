@@ -7,6 +7,8 @@ import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
+import Card1 from "../Card1/Card1";
+import Card2 from "../Card2/Card2";
 
 const Services = () => {
   // context
@@ -24,16 +26,17 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
+        <span style={{ color: darkMode ? "white" : "" }}>Every Action Counts!</span>
+        {/* <span>    services</span> */}
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+          <br></br>
+          Footprints of change:
           <br />
-          ispum is simpley dummy text of printing
+          "Walking Towards a Sustainable Future"
         </spane>
-        <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
-        </a>
+        {/* <a href={Resume} download>
+          <button className="button s-button">Learn More</button>
+        </a> */}
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}
@@ -44,10 +47,10 @@ const Services = () => {
           whileInView={{ left: "14rem" }}
           transition={transition}
         >
-          <Card
-            emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+          <Card1
+            emoji={Glasses}
+            heading={"Cycling Contest"}
+            detail={"Cycle To Create a Sustainable Future"}
           />
         </motion.div>
         {/* second card */}
@@ -57,10 +60,10 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
-          />
+            emoji={HeartEmoji}
+            heading={"WATT Chargers"}
+            detail={"Current Conservation, Future Preservation"}
+          /> 
         </motion.div>
         {/* 3rd */}
         <motion.div
@@ -68,11 +71,11 @@ const Services = () => {
           whileInView={{ left: "12rem" }}
           transition={transition}
         >
-          <Card
+          <Card2
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"UpCycling Contest"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Transform Trash into Teasure: Earn Rewards"
             }
             color="rgba(252, 166, 31, 0.45)"
           />
